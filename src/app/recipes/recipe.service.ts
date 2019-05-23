@@ -12,7 +12,7 @@ export class RecipeService {
     'This is a simple plate of Shrimps',
     'https://upload.wikimedia.org/wikipedia/commons/3/39/Recipe.jpg',
     [
-      new Ingredient('Shrimps', 2),
+      new Ingredient('Shrimps', 8),
       new Ingredient('French Fries', 20)
     ]),
     new Recipe('Chola Biryani',
