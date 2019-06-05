@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
+import { AuthComponent } from './auth/auth.component';
 import { RecipesComponent } from './recipes/recipes.component';
 import { RecipeDetailComponent } from './recipes/recipe-detail/recipe-detail.component';
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
@@ -16,6 +17,7 @@ const appRoutes: Routes = [
     { path: ':id/edit', component: RecipeEditComponent }
   ]},
   { path: 'shopping-list', component: ShoppingListComponent },
+  { path: 'auth', component: AuthComponent }
   // { path: 'not-found', component: ErrorPageComponent, data: {message: 'Page not found!'} },
   // { path: '**', redirectTo: '/not-found' }
 ];
