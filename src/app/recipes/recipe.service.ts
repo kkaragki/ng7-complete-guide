@@ -10,22 +10,23 @@ export class RecipeService {
 
   recipesChanged = new Subject<Recipe[]>();
 
-  private recipes: Recipe[] = [
-    new Recipe('Shrimps',
-    'This is a simple plate of Shrimps',
-    'https://upload.wikimedia.org/wikipedia/commons/3/39/Recipe.jpg',
-    [
-      new Ingredient('Shrimps', 8),
-      new Ingredient('French Fries', 20)
-    ]),
-    new Recipe('Chola Biryani',
-    'This is a Chola Biryani recipe',
-    'http://evergreenrecipes.com/wp-content/uploads/2016/02/P1010032-10.jpg',
-    [
-      new Ingredient('Garbanzo beans', 20),
-      new Ingredient('Tomato', 2)
-    ])
-  ];
+  // private recipes: Recipe[] = [
+  //   new Recipe('Shrimps',
+  //   'This is a simple plate of Shrimps',
+  //   'https://upload.wikimedia.org/wikipedia/commons/3/39/Recipe.jpg',
+  //   [
+  //     new Ingredient('Shrimps', 8),
+  //     new Ingredient('French Fries', 20)
+  //   ]),
+  //   new Recipe('Chola Biryani',
+  //   'This is a Chola Biryani recipe',
+  //   'http://evergreenrecipes.com/wp-content/uploads/2016/02/P1010032-10.jpg',
+  //   [
+  //     new Ingredient('Garbanzo beans', 20),
+  //     new Ingredient('Tomato', 2)
+  //   ])
+  // ];
+  private recipes: Recipe[] = [];
 
   constructor(private shoppingListService: ShoppingListService) {}
 
